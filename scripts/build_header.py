@@ -29,17 +29,17 @@ def draw_frame(index, still=False):
     for x, color in [(28, "#f97583"), (46, "#e3b341"), (64, "#56d4a0")]:
         d.ellipse((x, 19, x + 8, 27), fill=color)
     d.text((86, 13), "jackzhu777 / about-me", font=font(14, mono=True), fill="#93a4b8")
-    d.text((38, 66), "HELLO, WORLD", font=font(15, mono=True), fill="#6ee7ce")
+    d.text((38, 66), "MACHINE LEARNING FOR HEALTHCARE", font=font(15, mono=True), fill="#6ee7ce")
     d.text((36, 91), "Zhuowei Zhu", font=font(49, bold=True), fill="#f0f6fc")
     d.text((39, 158), "UCL  /  Scientific & Data Intensive Computing", font=font(18), fill="#acbdd0")
-    phrases = ["Building with Java & Python", "Exploring machine learning", "Designing useful products"]
+    phrases = ["Robust models for clinical text", "Medical image classification", "Machine learning for healthcare"]
     phrase = phrases[(index // 36) % 3]
     count = len(phrase) if still else min(len(phrase), (index % 36) * 2)
     d.text((39, 202), "> " + phrase[:count], font=font(21, mono=True), fill="#7dd3fc")
     if not still and index % 8 < 5:
         x = 39 + d.textlength("> " + phrase[:count], font=font(21, mono=True))
         d.rectangle((x + 3, 208, x + 12, 228), fill="#7dd3fc")
-    d.text((39, 260), "RESEARCH  /  ENGINEERING  /  PRODUCT", font=font(13, mono=True), fill="#7b8fa9")
+    d.text((39, 260), "BIOMEDICAL NLP  /  ROBUSTNESS  /  MEDICAL IMAGING", font=font(13, mono=True), fill="#7b8fa9")
     cx, cy = 807, 167
     d.ellipse((cx-86, cy-86, cx+86, cy+86), outline="#2a3c51", width=2)
     points = [(cx + 81*math.cos(a), cy + 81*math.sin(a)) for a in [-math.pi/2, math.pi/6, 5*math.pi/6]]
@@ -49,7 +49,7 @@ def draw_frame(index, still=False):
         px, py = cx + (x-cx)*phase, cy + (y-cy)*phase
         d.ellipse((px-3, py-3, px+3, py+3), fill="#6ee7ce")
         d.rounded_rectangle((x-28, y-17, x+28, y+17), radius=10, fill="#1c2d40", outline="#41617e")
-        label = ["ML", "DEV", "UX"][n]
+        label = ["ML", "IMG", "NLP"][n]
         width = d.textlength(label, font=font(16, mono=True))
         d.text((x-width/2, y-11), label, font=font(16, mono=True), fill="#b4f5e5")
     d.ellipse((cx-38, cy-38, cx+38, cy+38), fill="#1a3343", outline="#6ee7ce", width=2)
@@ -58,7 +58,7 @@ def draw_frame(index, still=False):
 
 
 frames = [draw_frame(i) for i in range(108)]
-frames[0].save(ASSETS / "header-zhuowei-v2.gif", save_all=True, append_images=frames[1:],
+frames[0].save(ASSETS / "header-healthcare-v3.gif", save_all=True, append_images=frames[1:],
                duration=100, loop=0, optimize=True, disposal=1)
-draw_frame(18, still=True).save(ASSETS / "header-zhuowei-v2.png")
-print(f"Generated 108 frames; GIF size: {(ASSETS / 'header-zhuowei-v2.gif').stat().st_size:,} bytes")
+draw_frame(18, still=True).save(ASSETS / "header-healthcare-v3.png")
+print(f"Generated 108 frames; GIF size: {(ASSETS / 'header-healthcare-v3.gif').stat().st_size:,} bytes")
