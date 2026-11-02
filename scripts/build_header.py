@@ -52,8 +52,8 @@ def draw_frame(index, still=False):
         label = ["ML", "DEV", "UX"][n]
         width = d.textlength(label, font=font(16, mono=True))
         d.text((x-width/2, y-11), label, font=font(16, mono=True), fill="#b4f5e5")
-    d.ellipse((cx-32, cy-32, cx+32, cy+32), fill="#1a3343", outline="#6ee7ce", width=2)
-    d.text((cx-20, cy-16), "ZZ", font=font(24, bold=True), fill="#ecfdf5")
+    d.ellipse((cx-38, cy-38, cx+38, cy+38), fill="#1a3343", outline="#6ee7ce", width=2)
+    d.text((cx, cy), "Zhuowei", font=font(16, bold=True), fill="#ecfdf5", anchor="mm")
     return image
 
 
