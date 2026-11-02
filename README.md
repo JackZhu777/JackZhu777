@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/header.png">
-  <img src="./assets/header.gif" alt="Hi, I'm Zhuowei Zhu — machine learning, software development and product design" width="960">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/header-zhuowei-v2.png">
+  <img src="./assets/header-zhuowei-v2.gif" alt="Hi, I'm Zhuowei Zhu — machine learning, software development and product design" width="960">
 </picture>
 
 **Machine Learning · Full-Stack Development · Product Design**
@@ -11,7 +11,7 @@ MSc Scientific and Data Intensive Computing student at **University College Lond
 
 [🧭 About](#about-me) · [🛠️ Skills](#technical-skills) · [🔬 Projects](#selected-projects) · [💼 Experience](#experience)
 
-<sub><a href="./assets/header.png">View a still version of the banner</a> · <a href="https://github.com/JackZhu777?tab=repositories">Explore my repositories ↗</a></sub>
+<sub><a href="./assets/header-zhuowei-v2.png">View a still version of the banner</a> · <a href="https://github.com/JackZhu777?tab=repositories">Explore my repositories ↗</a></sub>
 
 </div>
 

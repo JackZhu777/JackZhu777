@@ -58,7 +58,7 @@ def draw_frame(index, still=False):
 
 
 frames = [draw_frame(i) for i in range(108)]
-frames[0].save(ASSETS / "header.gif", save_all=True, append_images=frames[1:],
+frames[0].save(ASSETS / "header-zhuowei-v2.gif", save_all=True, append_images=frames[1:],
                duration=100, loop=0, optimize=True, disposal=1)
-draw_frame(18, still=True).save(ASSETS / "header.png")
-print(f"Generated 108 frames; GIF size: {(ASSETS / 'header.gif').stat().st_size:,} bytes")
+draw_frame(18, still=True).save(ASSETS / "header-zhuowei-v2.png")
+print(f"Generated 108 frames; GIF size: {(ASSETS / 'header-zhuowei-v2.gif').stat().st_size:,} bytes")
